@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+
+body {
+  background: #2E3440;
+  color: #E5E9F0;
+  font-family: 'Droid Sans Mono', monospace;
+  text-align: center;
+}
+
+.timer {
+  font-family: Droid Sans Mono, monospace;
+  font-size: 28px;
+  
+  &__start, 
+  &__stop, 
+  &__lap {
+    border-radius: 50%;
+    font-weight: 600;
+    height: 5em;
+    width: 5em;
+    text-transform: uppercase;
+    background: #2E3440;
+    // border: 2px solid #8FBCBB;
+    border: none;
+    box-shadow: 0 0 0 1px #ECEFF4, 0 0 0 3px #2E3440;
+    color: white;
+    &:hover,
+    &:focus {
+      background: transparent;
+    }
+  }
+  &__start {
+    background: #88C0D0;
+    box-shadow: 0 0 0 1px #ECEFF4, 0 0 0 3px #88C0D0;
+    &:hover,
+    &:focus {
+      color: #88C0D0;
+      box-shadow: 0 0 0 1px #88C0D0, 0 0 0 3px #2E3440;
+    }
+  }
+  &__stop {
+    background: #EBCB8B;
+    box-shadow: 0 0 0 1px #ECEFF4, 0 0 0 3px #EBCB8B;
+    &:hover, 
+    &:focus {
+      color: #EBCB8B;
+      box-shadow: 0 0 0 1px #EBCB8B, 0 0 0 3px #2E3440;
+    }
+  }
+  &__lap {
+    background: #B48EAD;
+    box-shadow: 0 0 0 1px #ECEFF4, 0 0 0 3px #B48EAD;
+    &:hover,
+    &:focus {
+      color: #B48EAD;
+      box-shadow: 0 0 0 1px #B48EAD, 0 0 0 3px #2E3440;
+    }
+  }
+  
+  &__reset,
+  &__laps-clear {
+    background: #D08770;
+    background: transparent;
+    // box-shadow: 0 0 0 1px #D08770, 0 0 0 3px white;
+    border: none;
+    border: 1px solid white;
+    color: white;
+    // color: #3B4252;
+    text-transform: uppercase;
+    padding: 0.4em 1em;
+    &:hover,
+    &:focus {
+      color: #D08770;
+      border-color: #D08770;
+      color: #2E3440;
+      border-color: #2E3440;
+      background: #D08770;
+      // box-shadow: 0 0 0 1px #D08770, 0 0 0 3px #2E3440;
+    }
+  }
+  
+  &__laps-list {
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+  }
+}
